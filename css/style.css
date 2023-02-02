@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+
+/*header*/
+header{
+    background-color: black;
+    font-family: 'Arvo', serif;
+    
+}
+h1 {
+    font-style: oblique;
+    text-align: center;
+    }
+h1{
+    color: aliceblue;
+}
+
+header nav ul li a{
+    flex-wrap: wrap;
+    text-decoration:none;
+    color: aliceblue;
+    margin: 15px
+}
+header nav ul li a:hover{
+    color: coral;
+    transition-duration: 1s;
+}
+
+header nav ul li{
+    margin: 15px;
+    list-style: none;
+}
+header nav ul{
+    list-style-type: style none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*main*/
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    background-image:url(../img/cristiano1.jpg);
+    background-position:top;
+    background-attachment: fixed
+}
+
+.titulop{
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+    .hero iframe{
+        margin: 30px;
+    }
+
+    .galeria{
+    background-color: black;
+}
+.tituloGaleria h2{
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-weight: 100;
+    text-align: center;
+    background-color: black;
+}
+
+.gridgaleria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+    object-fit: cover;
+   
+}
+.gridgaleria div img{
+    width: 100%;
+    height: 100%;
+}
+.i6{
+    grid-area: span 2
+}
+
+    
+/*footer*/
+footer{
+    background-color: black;
+}
+footer div a img{
+    width: 50px;
+    height: 50px;
+}
+
+/*media query galeria*/
+@media screen and (max-width: 950px) {
+    .gridgaleria{ 
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 220px;
+
+    }
+    .i6{ grid-area: span 2;}
+}
+@media screen and (max-width: 450px){
+    .gridgaleria{ 
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+    }
+    .i6{ grid-area: span 2;}
+
+/* media query header*/
+@media screen and (max-width: 700px) {
+    .lista li{
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 450px) {
+    
+    .lista {
+        margin: 0px;
+        flex-direction: column;
+    }
+}
+
+/* media query del video */
+@media screen and (max-width: 450px){
+    .video{
+        width: 220px;
+        height: 220px;
+    }
+}
