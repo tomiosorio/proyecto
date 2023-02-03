@@ -34,7 +34,9 @@ header nav ul li a:hover{
     color: coral;
     transition-duration: 1s;
 }
-
+header nav ul{
+    margin: 0px;
+}
 header nav ul li{
     margin: 15px;
     list-style: none;
@@ -59,24 +61,35 @@ header nav ul{
     background-position:top;
     background-attachment: fixed
 }
+.hero iframe{
+    margin: 30px;
+}
 
-.titulop{
+
+.herogoles h3{
+    text-align: center;
     color: aliceblue;
     font-family: 'Arvo', serif;
-    background-repeat: no-repeat;
     background-size: cover;
-    font-weight: 100;
+    font-size: 20px;
     text-align: center;
-    
+}
+.herogoles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    background-image:url(../img/cristiano1.jpg);
+    background-position:top;
+    background-attachment: fixed
 }
 
-    .hero iframe{
-        margin: 30px;
-    }
 
-    .galeria{
+.galeria{
     background-color: black;
 }
+
 .tituloGaleria h2{
     color: aliceblue;
     font-family: 'Arvo', serif;
@@ -86,13 +99,13 @@ header nav ul{
     background-color: black;
 }
 
+/*--------------------------------grid galeria------------------*/
 .gridgaleria{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 300px;
     gap: 15px;
-    object-fit: cover;
-   
+    object-fit: cover;   
 }
 .gridgaleria div img{
     width: 100%;
@@ -101,8 +114,30 @@ header nav ul{
 .i6{
     grid-area: span 2
 }
+/*---------------------grids goles-----------------*/
 
-    
+.golesgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+    object-fit: cover;
+    background-color: black;
+}
+.golesgrid div img{
+    width: 100%;
+    height: 100%;
+}
+.golesgrid div h2{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-weight: 100;
+    text-align: center;
+    background-color: black;
+
+}
 /*footer*/
 footer{
     background-color: black;
@@ -150,3 +185,26 @@ footer div a img{
         height: 220px;
     }
 }
+/*media query hergoles*/
+@media  screen and (max-width: 900px) {
+    .herogoles h3{
+        font-size: 15px;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .herogoles h3{
+        font-size: 12px;
+    }
+}
+@media  screen and (max-width: 350px) {
+    .herogoles h3{
+        font-size: 10px;
+    }
+}
+/*media query goles */
+@media screen and (max-width: 450px){
+    .golesgrid{ 
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+    }
