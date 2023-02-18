@@ -1,0 +1,37 @@
+header{
+    background-color: black;
+    font-family: 'Arvo', serif;
+    
+    
+    h1{
+        font-style: oblique;
+        text-align: center;
+        color: aliceblue;
+
+    }
+    nav{
+        ul{
+            margin: 0px;
+            list-style-type: style none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li{
+                margin: 15px;
+                list-style: none;
+                a{  
+                    &:hover{
+                        color: coral;
+                        transition-duration: 1s;
+                    }
+                    flex-wrap: wrap;
+                    text-decoration:none;
+                    color: aliceblue;
+                    margin: 15px
+                    }
+                }
+
+            }
+        }
+
+    }
