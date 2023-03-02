@@ -64,6 +64,9 @@ header nav ul{
 }
 .hero iframe{
     margin: 30px;
+    box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
 }
 
 
@@ -73,7 +76,6 @@ header nav ul{
     font-family: 'Arvo', serif;
     background-size: cover;
     font-size: 20px;
-    text-align: center;
     width: 50%;
 }
 .herogoles{
@@ -87,7 +89,14 @@ header nav ul{
     background-attachment: fixed
 }
 
-
+p{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 20px;
+    width: 50%;
+}
 
 .galeria{
     background-color: black;
@@ -101,13 +110,44 @@ header nav ul{
 .carrusel div img{
     width: 100%;
     height: 450px;
+    
 }
+.trofeosDestacados{
+    background-image: url(../img/fondoof.jpg);
+}
+/*---------trofeos grid--------*/
+.gridtrofeos{    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+    object-fit: cover;
+    background-color: black;
+    
+}
+.gridtrofeos div img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+-webkit-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+-moz-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+}
+.gridtrofeos h3{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+}
+
+
 .carrusel h5{
     color: black;
     font-family: 'Arvo', serif;
     background-color: aliceblue;
 }
 
+/*acordion goles*/ 
+.acordeon { 
+    background-color: black;}
 /*--------------------------------grid galeria------------------*/
 .gridgaleria{
     display: grid;
@@ -117,9 +157,15 @@ header nav ul{
     object-fit: cover;
    
 }
+
+
+
 .gridgaleria div img{
     width: 100%;
     height: 100%;
+    box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+-webkit-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
+-moz-box-shadow: 4px 6px 5px 0px rgba(59,81,158,0.78);
 }
 /*footer*/
 footer{
@@ -193,4 +239,26 @@ footer div a img{
         width: 100%;
     }
     
+}
+
+/* media query grid trofeos listo-----------------------*/
+@media screen and (max-width: 450px){
+    .gridtrofeos{ 
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+    .gridtrofeos h3{
+        font-size: 10px;
+    }
+    }
+    /*media query p hero trofeos listo*/
+@media screen and (max-width: 800px){
+    .hero p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+    .hero p{
+        font-size: 10px;
+    }
 }

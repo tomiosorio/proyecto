@@ -58,3 +58,22 @@
         }
         
     }
+@media screen and (max-width: 450px){
+        main section .gridtrofeos{ 
+            grid-template-columns: 1fr;
+            grid-auto-rows: 220px;
+        }
+        main section .gridtrofeos div h3{
+            font-size: 10px;
+        }
+        }
+@media screen and (max-width: 800px){
+            main .hero p{
+                font-size: 15px;
+            }
+        }
+@media screen and (max-width: 500px){
+            main .hero p{
+                font-size: 10px;
+            }
+        }      
