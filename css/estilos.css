@@ -100,20 +100,35 @@ main .carrusel h5 {
   font-family: 'Arvo', serif;
   background-color: aliceblue; }
 
+main .fgoles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  background-position: top;
+  background-image: url(../img/fondoof.jpg);
+  background-attachment: fixed; }
+  main .fgoles .videogoles {
+    margin: 30px;
+    box-shadow: 4px 6px 5px 0px rgba(59, 81, 158, 0.78);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(59, 81, 158, 0.78);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(59, 81, 158, 0.78); }
+
 main .trofeosDestacados {
   background-image: url(../img/fondoof.jpg); }
-  main .trofeosDestacados , .gridtrofeos {
+  main .trofeosDestacados .gridtrofeos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
     gap: 15px;
     object-fit: cover;
     background-color: black; }
-    main .trofeosDestacados , .gridtrofeos div h3 {
+    main .trofeosDestacados .gridtrofeos div h3 {
       text-align: center;
       color: aliceblue;
       font-family: 'Arvo', serif; }
-    main .trofeosDestacados , .gridtrofeos div img {
+    main .trofeosDestacados .gridtrofeos div img {
       width: 100%;
       height: 100%;
       box-shadow: 4px 6px 5px 0px rgba(59, 81, 158, 0.78);
@@ -122,6 +137,208 @@ main .trofeosDestacados {
 
 main .acordeon {
   background-color: black; }
+
+main .familia {
+  background-image: url(../img/cr7.jpg);
+  background-position: top;
+  background-attachment: fixed; }
+  main .familia div h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arvo', serif; }
+  main .familia div h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 20px;
+    width: 65%; }
+
+main .hermanos {
+  background-image: url(../img/cr7.jpg);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hermanos div h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arvo', serif; }
+  main .hermanos div strong {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 25px; }
+  main .hermanos div h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 20px;
+    width: 65%; }
+
+main .padres {
+  background-image: url(../img/cr7.jpg);
+  background-position: top;
+  background-attachment: fixed; }
+  main .padres div h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arvo', serif; }
+  main .padres div strong {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 25px; }
+  main .padres div h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 20px;
+    width: 65%; }
+
+main .hsporting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hsporting h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hsporting h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
+
+main .hmanchester {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hmanchester h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hmanchester h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
+
+main .hrealmadrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hrealmadrid h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hrealmadrid h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
+
+main .hjuventus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hjuventus h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hjuventus h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
+
+main .hmanchester2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hmanchester2 h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hmanchester2 h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
+
+main .hportugal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/fondoh.webp);
+  background-position: top;
+  background-attachment: fixed; }
+  main .hportugal h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 40px;
+    width: 50%;
+    text-align: initial; }
+  main .hportugal h3 {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    background-size: cover;
+    font-size: 15px;
+    width: 65%; }
 
 footer {
   background-color: black; }
@@ -173,6 +390,11 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 450px) {
+  main section .videogoles {
+    width: 220px;
+    height: 220px; } }
+
+@media screen and (max-width: 450px) {
   main section .gridtrofeos {
     grid-template-columns: 1fr;
     grid-auto-rows: 220px; }
@@ -186,3 +408,22 @@ footer {
 @media screen and (max-width: 500px) {
   main .hero p {
     font-size: 10px; } }
+
+@media screen and (max-width: 750px) {
+  main .hero h3 {
+    font-size: 10px;
+    width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  main .hsporting h2 {
+    font-size: 25px; }
+  main .hmanchester h2 {
+    font-size: 25px; }
+  main .hrealmadrid h2 {
+    font-size: 25px; }
+  main .hjuventus h2 {
+    font-size: 25px; }
+  main .hmanchester2 h2 {
+    font-size: 25px; }
+  main .hportugal h2 {
+    font-size: 25px; } }

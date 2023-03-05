@@ -59,6 +59,12 @@
         
     }
 @media screen and (max-width: 450px){
+        main section .videogoles{
+            width: 220px;
+            height: 220px;
+        }
+    }
+@media screen and (max-width: 450px){
         main section .gridtrofeos{ 
             grid-template-columns: 1fr;
             grid-auto-rows: 220px;
@@ -77,3 +83,30 @@
                 font-size: 10px;
             }
         }      
+@media  screen and (max-width: 750px) {
+    main .hero h3{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    main .hsporting h2{
+        font-size: 25px;
+    }
+    main .hmanchester h2{
+        font-size: 25px;
+    }
+    main .hrealmadrid h2{
+        font-size: 25px;
+    }
+    main .hjuventus h2{
+        font-size: 25px;
+    }
+    main .hmanchester2 h2{
+        font-size: 25px;
+    }
+    main .hportugal h2{
+        font-size: 25px;
+    }
+}
+
